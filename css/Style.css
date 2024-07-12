@@ -1,0 +1,1226 @@
+/*
+Author:Kaung Sat Paing
+Date: 
+File Name: styles.css
+*/
+
+/* CSS  Reset */
+body, header, nav, main, footer, h1, div, img, ul {
+	margin: 0;
+	padding: 0;
+	border: 0;
+} 
+
+/* Style rules for body and images */
+body {
+	 background-color: #d87093;
+}
+
+img  {
+	max-width: 100%;
+	display: block;
+}
+
+
+
+/* Style rules for mobile viewport */
+
+/* Style rules for header */
+header{
+	top: 0;
+	background-color: #d87093;
+   	height: 200px;
+}
+
+header img {
+	margin: 0 auto;
+}
+
+/* Style rules for humburger menu */
+
+.mobile-nav a {
+    color: rgb(0, 0, 0);
+    font-family: 'Francois One', sans-serif;
+    text-align: center;
+    font-size: 2em;
+    text-decoration: none;
+    padding: 3%;
+    display: block;
+    }
+
+.mobile-nav a.menu-icon{
+    display: block;
+    position:absolute;
+    right: 0;
+    top: 0;
+}
+
+div.desc {
+	padding: 15px;
+	text-align: center;
+	color: rgb(0, 0, 0);
+   }
+   
+
+
+/* Show mobile class, hide tablet-desktop class and menu-links id */
+.mobile {
+	display: block;
+}
+
+.tablet-desktop, #menu-links {
+	display: none;
+}
+
+/* Style rules for main content */
+main {
+	background-color: #fff;
+	padding: 2%;
+	font-size: 1.15em;
+	font-family: 'Roboto Slab', serif;
+}
+
+.mobile h3 {
+	text-shadow: 5px 5px 8px #ccc;  
+}	
+
+.tel-link {
+	background-color: #d87093;
+	padding: 2%;
+	margin: 0 auto;
+	width: 80%;
+	text-align: center;
+	border-radius: 5px;
+}
+
+.tel-link a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 1.5em;
+	display: block;
+}
+
+.hours {
+	margin-left: 10%;
+}
+
+.action {
+	font-size: 1.35em;
+	color: #666600;
+	font-weight: bold;
+	text-shadow: 5px 5px 8px #ccc; /* EXTRA */
+}
+
+.slider-frame{
+	overflow: hidden;
+	height: 500px;
+	width: auto;
+}
+
+@keyframes slide_animation{
+	0% {left:0px;}
+	10% {left:0px;}
+	20% {left:1200px;}
+	30% {left:1200px;}
+	40% {left: 2400px;}
+	50% {left: 2400px;}
+	60% {left: 1200px;}
+	70% {left: 1200px;}
+	80% {left: 0px;}
+	90% {left: 0px;}
+	100% {left:0px;}
+}
+
+@-webkit-keyframes slide_animation{
+	0% {left:0px;}
+	10% {left:0px;}
+	20% {left:1200px;}
+	30% {left:1200px;}
+	40% {left: 2400px;}
+	50% {left: 2400px;}
+	60% {left: 1200px;}
+	70% {left: 1200px;}
+	80% {left: 0px;}
+	90% {left: 0px;}
+	100% {left:0px;}
+}
+
+.slide-images{
+	width: 3600px;
+	height: 800px;
+	margin: 0 0 0 -2400px;
+	position: relative;
+	-webkit-animation-name: slide_animation;
+	animation-name: slide_animation;
+	-webkit-animation-duration: 33s;
+	animation-duration: 33s;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+	-webkit-animation-direction: alternate;
+	animation-direction: alternate;
+	-webkit-animation-play-state: running;
+	animation-play-state: running;
+}
+
+.img-container{
+	height: 800px;
+	width: 1200px;
+	position: relative;
+	float: left;
+}
+
+#weights,#cardio,#training,#galler,#newda,
+#ladie,#heave,#lov,#pin,#ros,#purpl,
+#sunflowe,#bab,#babylov,#chocolat
+{
+	 margin: 32px;
+	 border: 3px solid #d87093;
+	 border-style:solid;
+	 float: left;
+	 width: 300px;
+   }
+
+   #online,#pickup{
+	margin: 45px;
+	float: left;
+	width: 300px;
+	margin-top: auto;
+
+}
+
+#ceremony,#show,#birthday,#wedding{
+ 
+	margin: 15px;
+	float: left;
+	width: 350px;
+   }
+
+ 
+
+   .ordernow {
+	position: relative;
+	padding: 4px 22px;
+	background: #7d2ae8;
+	border-radius: 6px;
+	color: #fff;
+	border:none;
+	font-size: 18px;
+	font-weight: 400;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+	
+}
+
+.shopnow {
+	position: relative;
+	padding: 10px 22px;
+	background: #7d2ae8;
+	border-radius: 10px;
+	color: #fff;
+	border:none;
+	font-size: 40px;
+	font-weight: 400;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+	position: absolute;
+    top: 30%;
+	right: 83%;
+    transform: translate(50%, -50%);
+}
+
+a.shopnow:hover { 
+	color: rgb(255, 245, 245);
+	background-color: rgb(207, 64, 64); 
+	transform: 2s;
+	
+}	
+
+
+
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+   }
+   
+
+.round {
+	border-radius: 8px;
+}
+
+#contact {
+	text-align: center;
+}
+
+#contacts {
+	text-align: center;
+}
+
+#form {
+    margin-top: 2%;
+    background-color: #f2f2f2;
+    padding: 2%;
+}
+
+#form h2 {
+    text-align: center;
+}
+    
+/* Style rules for form elements */
+fieldset, input, select, textarea {
+    margin-bottom: 2%;
+}
+
+fieldset legend {
+    font-weight: bold;
+    font-size: 1.25em;
+}
+
+label {
+    display: block;
+    padding-top: 3%;
+}
+
+form #submit {
+    margin: 0 auto;
+    border: none;
+    display: block;
+    padding: 2%;
+    background-color: #b3b3b3;
+    font-size: 1em;
+    border-radius: 10px;
+}
+
+
+   *{
+	margin: 0;
+	padding: 0;
+	font-family: 'poppins', sans-serif;
+	box-sizing: border-box;
+   }
+
+   section{
+	position: relative;
+	min-height: 100vh;
+	width: 100%;
+	background: #070c0d;
+	overflow: hidden;
+   }
+
+   section.heading{
+	display: inline-block;
+	position:relative;
+	color:#3b7cf5;
+	font-size: 4ww;
+	padding: 60px;
+	width: 100%;
+	text-align: center;
+	font-weight: 800;
+   }
+
+   section.heading b{
+	color: #fff;
+   }
+   
+   .wrapper{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	text-align: center;
+   }
+   
+   .wrapper .review{
+	position:relative;
+	width: 350px;
+	color: #fff;
+	background: #222;
+	margin: 40px 10px;
+	padding: 30px 20px;
+	border-radius: 3px;
+	transition: 0.3s ease;
+   }
+
+   .wrapper .review .profile .imgBox{
+	position: relative;
+	height: 100px;
+	width: 100px;
+	margin: auto;
+	border: 8px solid #070c0d;
+	border-radius: 50%;
+	overflow: hidden;
+
+   }
+
+   .wrapper .review .profile .imgBox img{
+   position: absolute;
+   height: 100%;
+   width: 100%;
+   top: 0;
+   left: 0;
+   border-radius: 50%;
+   border-radius: 50%;
+   object-fit: cover;
+   transition: 0.3s ease;
+}
+
+  .wrapper .review .profile .imgBox:hover img{
+   filter: saturate(140%);
+   transform: scale(0.95);
+}
+
+ .wrapper .review .profile h2 {
+	padding: 5px 0;
+	text-transform: capitalize;
+	color: #fff;
+	letter-spacing: 1px;
+	text-align: center;
+ }
+
+ .wrapper .review p{
+	margin-top: 50px;
+	color: #fff;
+	padding: 0 8px;
+	font-size: 15px;
+	opacity: 0.8;
+ }
+
+ .wrapper .review .left{
+	font-size: 30px;
+	display: block;
+	text-align: left;
+	color: #3b7cf5;
+ }
+
+ .wrapper .review .right{
+	font-size: 30px;
+	display: block;
+	text-align: left;
+	color: #3b7cf5;
+ }
+
+ .wrapper .review .social{
+	width: 100%;
+ }
+
+ .wrapper .review .social i{
+	font-size: 1.2em;
+	color: #fff;
+	padding: 9px;
+	background: rgba(255,255,255,0,0.8);
+	border-radius: 4px;
+	box-shadow: 0 4px 4px rgba(0,0,0,0.5);
+ }
+
+ .wrapper .review .social i:hover{
+	background: #3b7cf5;
+ }
+
+/* Style rules for footer content */
+footer p {
+	font-size: 0.75em;
+	text-align: center;
+	color: #fff;
+	padding: 0 1em;
+}
+
+footer p a{
+	color: #fff;
+	text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+/* Media Query for Tablet Viewport */  
+@media screen and (min-width: 630px){ 
+	
+	/* Tablet Viewport: Show tablet-desktop class, hide mobile class */	
+	.tablet-desktop{
+		display: block;   
+	}
+
+	.mobile, mobile-nav, .mobile-nav a.menu-icon {   
+		display: none;   
+	}
+	
+	/* Tablet Viewport: Style rule for header */
+	header {
+		padding-bottom: 2%;
+	}
+	
+	/* Tablet Viewport: Style rules for nav area */
+
+    nav {
+        padding: 1%;
+        margin-bottom: 1%;
+    }
+    
+    nav ul {
+        list-style-type: none;
+        text-align: center;
+    }
+
+    nav li {
+        font-size: 1.5em;
+        font-family: 'Francois One', sans-serif;
+		display: inline-block; 
+	 	border-right:  1px solid #fff;
+	}
+	
+	nav li:last-child {
+		border-right: none;
+	}
+	
+	nav li a {
+		padding: 0.1em 0.75em;	
+        display: block;
+	    color: #fff;
+	    text-decoration: none;	
+	}
+	
+	/* Tablet Viewport: Style rules for main content area */
+	main ul {
+		margin: 0 0 4% 10%;
+	}
+	
+	.slider-frame{
+		overflow: hidden;
+		height: 500px;
+		width: auto;
+	}
+
+	@keyframes slide_animation{
+		0% {left:0px;}
+		10% {left:0px;}
+		20% {left:1200px;}
+		30% {left:1200px;}
+		40% {left: 2400px;}
+		50% {left: 2400px;}
+		60% {left: 1200px;}
+		70% {left: 1200px;}
+		80% {left: 0px;}
+		90% {left: 0px;}
+		100% {left:0px;}
+	}
+   
+	@-webkit-keyframes slide_animation{
+		0% {left:0px;}
+		10% {left:0px;}
+		20% {left:1200px;}
+		30% {left:1200px;}
+		40% {left: 2400px;}
+		50% {left: 2400px;}
+		60% {left: 1200px;}
+		70% {left: 1200px;}
+		80% {left: 0px;}
+		90% {left: 0px;}
+		100% {left:0px;}
+	}
+   
+	.slide-images{
+		width: 3600px;
+		height: 800px;
+		margin: 0 0 0 -2400px;
+		position: relative;
+		-webkit-animation-name: slide_animation;
+		animation-name: slide_animation;
+		-webkit-animation-duration: 33s;
+		animation-duration: 33s;
+		-webkit-animation-iteration-count: infinite;
+		animation-iteration-count: infinite;
+		-webkit-animation-direction: alternate;
+		animation-direction: alternate;
+		-webkit-animation-play-state: running;
+		animation-play-state: running;
+	}
+   
+	.img-container{
+		height: 800px;
+		width: 1200px;
+		position: relative;
+		float: left;
+	}
+
+#weights,#cardio,#training,#gallery,#newday,
+#ladies,#heaven,#love,#pink,#rose,#purple,
+#sunflower,#baby,#babylove,#chocolate
+{
+	 margin: 50px;
+	 border: 4px solid #d87093;
+	 border-style:solid;
+	 float: left;
+	 width: 220px;
+   }
+   
+   #online,#pickup{
+	margin: 40px;
+	float: left;
+	width: 300px;
+	margin-top: auto;
+
+}
+
+#customer5{
+	width: 200%;
+   }
+
+
+.ordernow {
+	position: relative;
+	padding: 0.1px 22px;
+	background: #7d2ae8;
+	border-radius: 6px;
+	color: #fff;
+	border:none;
+	font-size: 18px;
+	font-weight: 400;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+	
+}
+
+.shopnow {
+	position: relative;
+	padding: 10px 22px;
+	background: #7d2ae8;
+	border-radius: 6px;
+	color: #fff;
+	border:none;
+	font-size: 80px;
+	font-weight: 400;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+	position: absolute;
+    top: 30%;
+	right: 67%;
+    transform: translate(50%, -50%);
+}
+
+	 a.shopnow:hover { 
+		color: rgb(255, 245, 245);
+		background-color: rgb(207, 64, 64); 
+		transform: 2s;
+		
+   }	
+	
+
+
+	#ceremony,#show,#birthday,#wedding{
+ 
+		margin: auto;
+		float: left;
+		width: auto;
+	   }
+
+
+	#exercises {
+		border-top: 1px solid #000;
+		border-bottom: 1px solid #000;
+		background: linear-gradient(to right,  #ccc, #fff); /* EXTRA */
+		background-color: #f2f2f2;
+		padding: 1% 2%;
+	}
+
+	#exercises dt {
+		font-weight: bold;
+	}
+
+	#exercises dd {
+		padding: 0.5% 1% 2% 0;
+	}
+
+	#contact {
+		text-align: center;
+	}
+	
+	*{
+		margin: 0;
+		padding: 0;
+		font-family: 'poppins', sans-serif;
+		box-sizing: border-box;
+	   }
+
+	   section{
+		position: relative;
+		min-height: 100vh;
+		width: 100%;
+		background: #070c0d;
+		overflow: hidden;
+	   }
+
+	   section.heading{
+		display: inline-block;
+		position:relative;
+		color:#3b7cf5;
+		font-size: 4ww;
+		padding: 60px;
+		width: 100%;
+		text-align: center;
+		font-weight: 800;
+	   }
+
+	   section.heading b{
+		color: #fff;
+	   }
+	   
+	   .wrapper{
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		text-align: center;
+	   }
+	   
+	   .wrapper .review{
+		position:relative;
+		width: 350px;
+		color: #fff;
+		background: #222;
+		margin: 40px 10px;
+		padding: 30px 20px;
+		border-radius: 3px;
+		transition: 0.3s ease;
+	   }
+
+	   .wrapper .review .profile .imgBox{
+		position: relative;
+		height: 100px;
+		width: 100px;
+		margin: auto;
+		border: 8px solid #070c0d;
+        border-radius: 50%;
+		overflow: hidden;
+
+	   }
+
+	   .wrapper .review .profile .imgBox img{
+	   position: absolute;
+	   height: 100%;
+	   width: 100%;
+	   top: 0;
+	   left: 0;
+	   border-radius: 50%;
+	   border-radius: 50%;
+	   object-fit: cover;
+	   transition: 0.3s ease;
+	}
+
+      .wrapper .review .profile .imgBox:hover img{
+	   filter: saturate(140%);
+	   transform: scale(0.95);
+	}
+
+     .wrapper .review .profile h2 {
+		padding: 5px 0;
+		text-transform: capitalize;
+		color: #fff;
+		letter-spacing: 1px;
+		text-align: center;
+	 }
+
+	 .wrapper .review p{
+		margin-top: 50px;
+		color: #fff;
+		padding: 0 8px;
+		font-size: 15px;
+		opacity: 0.8;
+	 }
+	
+	 .wrapper .review .left{
+		font-size: 30px;
+		display: block;
+		text-align: left;
+		color: #3b7cf5;
+	 }
+
+	 .wrapper .review .right{
+		font-size: 30px;
+		display: block;
+		text-align: left;
+		color: #3b7cf5;
+	 }
+
+	 .wrapper .review .social{
+		width: 100%;
+	 }
+
+	 .wrapper .review .social i{
+		font-size: 1.2em;
+		color: #fff;
+		padding: 9px;
+		background: rgba(255,255,255,0,0.8);
+		border-radius: 4px;
+		box-shadow: 0 4px 4px rgba(0,0,0,0.5);
+	 }
+
+	 .wrapper .review .social i:hover{
+		background: #3b7cf5;
+	 }
+    /* Tablet Viewport: Style rule for form element */
+    form {
+    width: 70%;
+    margin: 0 auto;
+    }
+
+	.tel-num { /*unuse in current prac*/
+		font-size: 1.25em;
+	}
+
+	.tel-link {
+		background-color: #d87093;
+		padding: 2%;
+		margin: 0 auto;
+		width: 80%;
+		text-align: center;
+		border-radius: 5px;
+	}
+
+	.map { /*unuse in current prac*/
+		width: 600px;
+		height: 450px;
+	}
+	
+}/* Media Query for Tablet Viewport closing brace */  
+
+@media screen and (min-width: 768px), print { 
+	#weights,#cardio,#training,#gallery,#newday,
+	#ladies,#heaven,#love,#pink,#rose,#purple,
+	#sunflower,#baby,#babylove,#chocolate
+	{
+		 margin: 84px;
+		 border: 4px solid #d87093;
+		 border-style:solid;
+		 float: left;
+		 width: 200px;
+	   }
+
+	   h1{
+		font-size: x-large;
+	   }
+
+	   h2{
+		font-size: medium;
+	   }
+}
+
+@media screen and (min-width: 1440px), print { 
+
+	#weights,#cardio,#training,#gallery,#newday,
+	#ladies,#heaven,#love,#pink,#rose,#purple,
+	#sunflower,#baby,#babylove,#chocolate
+	{
+		 margin: 140px;
+		 border: 4px solid #d87093;
+		 border-style:solid;
+		 float: left;
+		 width: 220px;
+	   }
+
+	   h1{
+		font-size: x-large;
+	   }
+
+	   h2{
+		font-size: medium;
+	   }
+}
+
+@media screen and (min-width: 820px), print { 
+	#weights,#cardio,#training,#gallery,#newday,
+	#ladies,#heaven,#love,#pink,#rose,#purple,
+	#sunflower,#baby,#babylove,#chocolate
+	{
+		 margin: 95px;
+		 border: 4px solid #d87093;
+		 border-style:solid;
+		 float: left;
+		 width: 200px;
+	   }
+
+	   h1{
+		font-size: x-large;
+	   }
+
+	   h2{
+		font-size: medium;
+	   }
+}
+
+
+
+
+
+/* Media Query for Desktop Viewport */
+@media screen and (min-width: 1015px), print { /* print is extra */
+
+	/* Desktop Viewport: Style rule for header */
+	header {
+		width: 25%;
+		float: left;
+		padding-bottom: 0;
+		background-color: #d87093;
+	}
+
+	div.desc {
+		padding: 15px;
+		text-align: center;
+		color: rgb(0, 0, 0);
+	   }
+	   
+
+	/* Desktop Viewport: Style rules for nav area */	
+	nav {
+		padding: 1%;   
+	    margin-bottom: 1%;   
+	}
+	
+	nav ul {
+		text-align: right; 
+	}
+	
+	nav li {
+		border: none;
+	}
+	
+	nav li a {
+		padding: 0.5em 1em;
+	}
+
+	 nav li a:hover { /* extra */
+		 color: #000;
+		 background-color: #fff; 
+	}		 
+	
+	/* Desktop Viewport: Style rules for main content */	
+	main {
+		clear: left;
+	}
+	
+	main h1 {
+		font-size: 1.8em;
+	}
+
+	.ordernow {
+		position: relative;
+		padding: 0.1px 22px;
+		background: #7d2ae8;
+		border-radius: 6px;
+		color: #fff;
+		border:none;
+		font-size: 18px;
+		font-weight: 400;
+		box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+	
+	}
+
+	.shopnow {
+		position: relative;
+		padding: 10px 22px;
+		background: #5811b4;
+		border-radius: 6px;
+		color: #fff;
+		border:none;
+		font-size: 80px;
+		font-weight: 400;
+		box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+		position: absolute;
+		top: 28%;
+		right: 35%;
+		transform: translate(50%, -50%);
+		border-radius: 50px;
+	}
+
+
+	 a.shopnow:hover { 
+		color: rgb(255, 245, 245);
+		background-color: rgb(207, 64, 64); 
+		transform: 2s;
+		
+   }	
+	
+
+	.slider-frame{
+		overflow: hidden;
+		height: 500px;
+		width:auto;
+	}
+
+	@keyframes slide_animation{
+		0% {left:0px;}
+		10% {left:0px;}
+		20% {left:1200px;}
+		30% {left:1200px;}
+		40% {left: 2400px;}
+		50% {left: 2400px;}
+		60% {left: 1200px;}
+		70% {left: 1200px;}
+		80% {left: 0px;}
+		90% {left: 0px;}
+		100% {left:0px;}
+	}
+   
+	@-webkit-keyframes slide_animation{
+		0% {left:0px;}
+		10% {left:1200px;}
+		20% {left:1200px;}
+		30% {left:1200px;}
+		40% {left: 2400px;}
+		50% {left: 2400px;}
+		60% {left: 1200px;}
+		70% {left: 1200px;}
+		80% {left: 0px;}
+		90% {left: 0px;}
+		100% {left:0px;}
+	}
+   
+	.slide-images{
+		width: 6000px;
+		height: 800px;
+		margin: 0 0 0 -4000px;
+		position: relative;
+		-webkit-animation-name: slide_animation;
+		animation-name: slide_animation;
+		-webkit-animation-duration: 20s;
+		animation-duration: 20s;
+		-webkit-animation-iteration-count: infinite;
+		animation-iteration-count: infinite;
+		-webkit-animation-direction: alternate;
+		animation-direction: alternate;
+		-webkit-animation-play-state: running;
+		animation-play-state: running;
+	}
+   
+	.img-container{
+		height: 800px;
+		width: 1200px;
+		position: relative;
+		float: right;
+	}
+
+	
+
+
+	
+#weights,#cardio,#training,#gallery,#newday,
+#ladies,#heaven,#love,#pink,#rose,#purple,
+#sunflower,#baby,#babylove,#chocolate
+{
+	 margin: 150px;
+	 border: 3px solid #d87093;
+	 border-style:solid;
+	 float: left;
+	 width: 300px;
+   }
+   
+   #online,#pickup{
+	margin: 300px;
+	float: left;
+	width: 300px;
+	margin-top: auto;
+
+}
+
+#customer5{
+	width: 200%;
+   }
+
+
+
+
+   #event{
+	padding: 0 1em;
+	max-width: 90rem;
+	margin: 0 auto;
+	
+   }
+
+
+
+	#exercises {
+		clear: left;
+	}
+
+	.tel-link {
+		background-color: #d87093;
+		padding: 2%;
+		margin: 0 auto;
+		width: 80%;
+		text-align: center;
+		border-radius: 5px;
+	}
+
+    /* Desktop Viewport: Style rules for form elements */
+    form {
+    width: auto;
+    }
+
+    .form-grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+    }
+    
+    .btn {
+    grid-column: 1 / span 3;
+    }
+
+	.card{
+		text-align: center;
+		padding: 1.5rem;
+		border-bottom-left-radius: 200px;
+		border-top-left-radius: 200px;
+		width: 25%;
+		margin: 30px;
+		display: grid;
+	   }
+	   
+	   .card img{
+		width: 50px;
+		margin: 2px;
+		
+	   }
+	   
+	   .card-1{
+		border: 4px solid rgb(243, 173, 44);
+	   }
+	   
+	   .card-2{
+		border: 4px solid rgb(255, 0, 0);
+	   }
+	   
+	   .card-3{
+		border: 4px solid rgb(0, 255, 255);
+	   }
+
+	   *{
+		margin: 0;
+		padding: 0;
+		font-family: 'poppins', sans-serif;
+		box-sizing: border-box;
+	   }
+
+	   section{
+		position: relative;
+		min-height: 70vh;
+		width: 100%;
+		background: #070c0d;
+		overflow: hidden;
+	   }
+
+	   section.heading{
+		display: inline-block;
+		position:relative;
+		color:#3b7cf5;
+		font-size: 4ww;
+		padding: 60px;
+		width: 50%;
+		text-align: center;
+		font-weight: 800;
+	   }
+
+	   section.heading b{
+		color: #fff;
+	   }
+	   
+	   .wrapper{
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		text-align: center;
+	   }
+	   
+	   .wrapper .review{
+		position:relative;
+		width: 350px;
+		color: #fff;
+		background: #222;
+		margin: 40px 10px;
+		padding: 30px 20px;
+		border-radius: 3px;
+		transition: 0.3s ease;
+	   }
+
+	   .wrapper .review .profile .imgBox{
+		position: relative;
+		height: 100px;
+		width: 100px;
+		margin: auto;
+		border: 8px solid #070c0d;
+        border-radius: 50%;
+		overflow: hidden;
+
+	   }
+
+	   .wrapper .review .profile .imgBox img{
+	   position: absolute;
+	   height: 100%;
+	   width: 100%;
+	   top: 0;
+	   left: 0;
+	   border-radius: 50%;
+	   border-radius: 50%;
+	   object-fit: cover;
+	   transition: 0.3s ease;
+	}
+
+      .wrapper .review .profile .imgBox:hover img{
+	   filter: saturate(140%);
+	   transform: scale(0.95);
+	}
+
+     .wrapper .review .profile h2 {
+		padding: 5px 0;
+		text-transform: capitalize;
+		color: #fff;
+		letter-spacing: 1px;
+		text-align: center;
+	 }
+
+	 .wrapper .review p{
+		margin-top: 50px;
+		color: #fff;
+		padding: 0 8px;
+		font-size: 15px;
+		opacity: 0.8;
+	 }
+	
+	 .wrapper .review .left{
+		font-size: 30px;
+		display: block;
+		text-align: left;
+		color: #3b7cf5;
+	 }
+
+	 .wrapper .review .right{
+		font-size: 30px;
+		display: block;
+		text-align: left;
+		color: #3b7cf5;
+	 }
+
+	 .wrapper .review .social{
+		width: 100%;
+	 }
+
+	 .wrapper .review .social i{
+		font-size: 1.2em;
+		color: #fff;
+		padding: 9px;
+		background: rgba(255,255,255,0,0.8);
+		border-radius: 4px;
+		box-shadow: 0 4px 4px rgba(0,0,0,0.5);
+	 }
+
+	 .wrapper .review .social i:hover{
+		background: #3b7cf5;
+	 }
+
+	
+
+
+
+}/* Media Query for Desktop Viewport closing brace */

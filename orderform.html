@@ -1,0 +1,109 @@
+<!doctype html>
+<!-- This Webiste is floral webiste was crearted by : Kaung Sat Paing-->
+<html lang="en">
+
+    <head>
+        <title>Busy Bee Florist </title>
+        <meta charset="utf-8">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/Style.css">
+    </head>
+
+ 
+ <body>
+
+    <div id = "container">
+        <!-- Mobile Nav -->
+        <nav class="mobile-nav">
+            <div id="menu-links">
+                <a href = "index.html">Home</a> 
+                <a href = "Order.html">Order</a>
+                <a href = "shopnow.html">Shop Now</a>
+                <a href = "DIY.html">DIY</a> 
+                <a href = "EventService.html">Event Services</a>
+                <a href = "news.html">News</a>
+                <a href = "Contactus.html">Contact Us</a> 
+             </div>
+             <a class="menu-icon" onclick="hamburger()">
+                  <div>&#9776;</div>
+             </a>
+         </nav>
+    
+    
+ 
+    <header>
+        
+        <img src = "Images/logo_3.jpg" alt = "Busy Bee Logo" width="200" >
+    </header>
+    
+    <nav class="tablet-desktop">
+		<ul>
+             <li><a href = "index.html">Home</a> </li>
+			 <li><a href = "Order.html">Order</a> </li>
+             <li><a href = "shopnow.html">Shop Now</a></li>
+			 <li><a href = "DIY.html">DIY</a> </li>
+			 <li><a href = "EventService.html">Event Services</a></li>
+             <li><a href = "news.html">News</a></li>
+			 <li><a href = "Contactus.html">Contact Us</a> </li>
+	    </ul>
+    </nav>
+    
+    <main>
+    
+    
+        
+
+        <div id="form">
+            <h2>Send to Our Customer Service for your Enquires</h2>
+
+            <form name="myForm" class="form-grid" action="submitted.html"  onsubmit="return validateForm()"> <!-- Start Form -->
+             
+
+
+            <fieldset>
+              <legend>Customer Information</legend>
+
+              <label for="fName">First Name:</label>
+              <input type="text" name="fName" id="fName">
+
+              <label for="lName">Last Name:</label>
+              <input type="text" name="lName" id="lName">
+
+              <label for="email">Email:</label>
+              <input type="email" name="email" id="email">
+
+              <label for="phone">Phone: </label>
+              <input type="tel" id="phone" name= "phone">
+
+              <label for="questions"> Write Your Order Details</label>
+              <textarea id="questions" name="questions" rows="5" cols="35"></textarea>
+            </fieldset>
+
+            <input type="submit" id="submit" value ="Submit" class="btn" >
+
+
+            </form> 
+         </div>
+
+
+          
+     
+
+        
+    </main>
+
+    <footer><br>
+        <p>@copy; Copyright 2021. All Rights Reserved.</p>
+        <p><a href="lailto:busybeeflorist@busybeemail.com.au">busybeeflorist@busybeemail.com.au</a></p>
+
+    </footer>
+    
+    </div>
+ 
+    <script src="scripts/script.js"></script>
+
+</body>
+</html>
